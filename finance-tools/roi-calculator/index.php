@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>ROI Calculator - Return on Investment</title>
+<meta name="description" content="Calculate return on investment for your projects with our ROI Calculator. Free and easy-to-use.">
+<meta name="keywords" content="ROI calculator, return on investment, financial tool, online calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "ROI Calculator",
+  "description": "Calculate return on investment for your projects.",
+  "applicationCategory": "Financial Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

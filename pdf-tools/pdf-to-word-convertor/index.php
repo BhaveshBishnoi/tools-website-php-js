@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>PDF to Word Converter - Free Online PDF to Word Tool</title>
+<meta name="description" content="Convert PDF files to editable Word documents online for free while maintaining formatting. No registration required!">
+<meta name="keywords" content="pdf to word converter, online pdf tool, free pdf to word conversion, convert pdf to word">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PDF to Word Converter",
+  "description": "Convert PDF files to editable Word documents online for free while maintaining formatting.",
+  "applicationCategory": "PDF Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

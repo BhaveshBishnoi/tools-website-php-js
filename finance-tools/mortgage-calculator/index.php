@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Mortgage Calculator - Calculate Mortgage Payments</title>
+<meta name="description" content="Calculate mortgage payments and amortization with our Mortgage Calculator. Free and easy-to-use.">
+<meta name="keywords" content="mortgage calculator, mortgage payments, amortization, financial tool, online calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Mortgage Calculator",
+  "description": "Calculate mortgage payments and amortization.",
+  "applicationCategory": "Financial Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

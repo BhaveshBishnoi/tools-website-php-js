@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>PDF Merger - Free Online PDF Combining Tool</title>
+<meta name="description" content="Combine multiple PDF files into a single document online for free. No registration required!">
+<meta name="keywords" content="pdf merger, online pdf tool, free pdf combining, merge pdf files">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PDF Merger",
+  "description": "Combine multiple PDF files into a single document online for free.",
+  "applicationCategory": "PDF Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

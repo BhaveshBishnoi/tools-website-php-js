@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Sleep Cycle Calculator - Free Online Optimal Sleep Times Calculator</title>
+<meta name="description" content="Calculate optimal bedtime and wake times online for free based on sleep cycles. No registration required!">
+<meta name="keywords" content="sleep cycle calculator, online sleep tool, free sleep calculation, optimal sleep times">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Sleep Cycle Calculator",
+  "description": "Calculate optimal bedtime and wake times online for free based on sleep cycles.",
+  "applicationCategory": "Health Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
 <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

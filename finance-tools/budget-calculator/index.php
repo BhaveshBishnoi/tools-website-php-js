@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Budget Calculator - Manage Your Budget</title>
+<meta name="description" content="Create and manage your personal budget with our Budget Calculator. Free and easy-to-use.">
+<meta name="keywords" content="budget calculator, personal budget, financial tool, online calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Budget Calculator",
+  "description": "Create and manage your personal budget.",
+  "applicationCategory": "Financial Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

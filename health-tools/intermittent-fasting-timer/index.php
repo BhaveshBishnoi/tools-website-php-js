@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Intermittent Fasting Timer - Free Online Fasting Period Tracker</title>
+<meta name="description" content="Track your intermittent fasting periods online for free and get notifications. No registration required!">
+<meta name="keywords" content="intermittent fasting timer, online fasting tool, free fasting tracker, fasting period calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Intermittent Fasting Timer",
+  "description": "Track your intermittent fasting periods online for free and get notifications.",
+  "applicationCategory": "Health Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

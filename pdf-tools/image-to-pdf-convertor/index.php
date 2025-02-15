@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Image to PDF Converter - Free Online Image to PDF Tool</title>
+<meta name="description" content="Convert single or multiple images into a PDF file online for free with custom settings. No registration required!">
+<meta name="keywords" content="image to pdf converter, online image to pdf tool, free image to pdf conversion, convert images to pdf">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Image to PDF Converter",
+  "description": "Convert single or multiple images into a PDF file online for free with custom settings.",
+  "applicationCategory": "PDF Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

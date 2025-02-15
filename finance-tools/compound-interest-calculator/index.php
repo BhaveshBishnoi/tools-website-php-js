@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Compound Interest Calculator - Calculate Growth</title>
+<meta name="description" content="Calculate compound interest growth over time with our Compound Interest Calculator. Free and easy-to-use.">
+<meta name="keywords" content="compound interest calculator, interest growth, financial tool, online calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Compound Interest Calculator",
+  "description": "Calculate compound interest growth over time.",
+  "applicationCategory": "Financial Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

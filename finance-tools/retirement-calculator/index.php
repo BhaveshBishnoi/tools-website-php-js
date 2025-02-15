@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Retirement Calculator - Plan Your Retirement</title>
+<meta name="description" content="Plan your retirement savings and goals with our Retirement Calculator. Free and easy-to-use.">
+<meta name="keywords" content="retirement calculator, retirement planning, savings, financial tool, online calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Retirement Calculator",
+  "description": "Plan your retirement savings and goals.",
+  "applicationCategory": "Financial Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

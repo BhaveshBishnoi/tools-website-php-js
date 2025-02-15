@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Water Intake Calculator - Free Online Daily Water Needs Calculator</title>
+<meta name="description" content="Calculate your daily water needs online for free based on weight and activity level. No registration required!">
+<meta name="keywords" content="water intake calculator, online water intake tool, free water needs calculation, daily water intake">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Water Intake Calculator",
+  "description": "Calculate your daily water needs online for free based on weight and activity level.",
+  "applicationCategory": "Health Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
 <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

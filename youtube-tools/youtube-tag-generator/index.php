@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>YouTube Tags Generator - Generate Optimized Tags</title>
+<meta name="description" content="Generate optimized tags for better video visibility with our YouTube Tags Generator. Free and easy-to-use.">
+<meta name="keywords" content="YouTube tags generator, video tags, optimize tags, YouTube SEO">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "YouTube Tags Generator",
+  "description": "Generate optimized tags for better video visibility.",
+  "applicationCategory": "YouTube Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

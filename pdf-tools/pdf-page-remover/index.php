@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>PDF Page Remover - Free Online PDF Page Removal Tool</title>
+<meta name="description" content="Remove specific pages from your PDF files quickly and easily online for free. No registration required!">
+<meta name="keywords" content="pdf page remover, online pdf tool, free pdf page removal, remove pdf pages">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PDF Page Remover",
+  "description": "Remove specific pages from your PDF files quickly and easily online for free.",
+  "applicationCategory": "PDF Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

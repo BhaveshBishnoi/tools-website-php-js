@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Image Converter - Free Online Image Format Converter</title>
+<meta name="description" content="Convert images between different formats (PNG, JPG, WebP) online for free. No registration required!">
+<meta name="keywords" content="image converter, online image tool, free image format converter, convert images">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Image Converter",
+  "description": "Convert images between different formats (PNG, JPG, WebP) online for free.",
+  "applicationCategory": "Image Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

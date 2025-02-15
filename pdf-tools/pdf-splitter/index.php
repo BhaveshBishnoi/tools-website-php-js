@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>PDF Splitter - Free Online PDF Splitting Tool</title>
+<meta name="description" content="Split large PDF files into smaller documents by page ranges online for free. No registration required!">
+<meta name="keywords" content="pdf splitter, online pdf tool, free pdf splitting, split pdf files">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PDF Splitter",
+  "description": "Split large PDF files into smaller documents by page ranges online for free.",
+  "applicationCategory": "PDF Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

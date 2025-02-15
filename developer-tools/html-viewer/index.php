@@ -130,6 +130,25 @@
 }
 </style>
 
+<title>HTML Viewer Tool - Free Online HTML Viewer</title>
+<meta name="description" content="View and analyze HTML code online for free with our HTML viewer tool. No registration required!">
+<meta name="keywords" content="html viewer, online html tool, free html viewer, analyze html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "HTML Viewer Tool",
+  "description": "View and analyze HTML code online for free with our HTML viewer tool.",
+  "applicationCategory": "HTML Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize CodeMirror

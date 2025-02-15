@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>BAC Calculator - Free Online Blood Alcohol Content Estimator</title>
+<meta name="description" content="Estimate your blood alcohol content online for free based on drinks consumed and personal factors. No registration required!">
+<meta name="keywords" content="bac calculator, online bac tool, free bac estimation, blood alcohol content">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "BAC Calculator",
+  "description": "Estimate your blood alcohol content online for free based on drinks consumed and personal factors.",
+  "applicationCategory": "Health Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

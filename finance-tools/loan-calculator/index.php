@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Loan Calculator - Calculate Loan Payments</title>
+<meta name="description" content="Calculate loan payments and interest rates with our Loan Calculator. Free and easy-to-use.">
+<meta name="keywords" content="loan calculator, loan payments, interest rates, financial tool, online calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Loan Calculator",
+  "description": "Calculate loan payments and interest rates.",
+  "applicationCategory": "Financial Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

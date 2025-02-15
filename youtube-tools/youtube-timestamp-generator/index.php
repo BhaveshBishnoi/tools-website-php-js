@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Timestamp Generator - Create Video Chapters</title>
+<meta name="description" content="Create video chapters and timestamps easily with our Timestamp Generator. Free and easy-to-use.">
+<meta name="keywords" content="timestamp generator, YouTube timestamps, video chapters, video timestamps">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Timestamp Generator",
+  "description": "Create video chapters and timestamps easily.",
+  "applicationCategory": "YouTube Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

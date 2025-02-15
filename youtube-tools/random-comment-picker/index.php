@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Random Comment Picker - Pick Random Comments</title>
+<meta name="description" content="Pick random comments for giveaways and contests with our Random Comment Picker. Free and easy-to-use.">
+<meta name="keywords" content="random comment picker, YouTube comments, comment picker, giveaway tool">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Random Comment Picker",
+  "description": "Pick random comments for giveaways and contests.",
+  "applicationCategory": "YouTube Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

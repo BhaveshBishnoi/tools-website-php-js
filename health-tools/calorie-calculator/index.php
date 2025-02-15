@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Calorie Calculator - Free Online Daily Caloric Needs Calculator</title>
+<meta name="description" content="Find out your daily caloric needs online for free based on your activity level and goals. No registration required!">
+<meta name="keywords" content="calorie calculator, online calorie tool, free caloric needs calculation, daily calorie intake">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calorie Calculator",
+  "description": "Find out your daily caloric needs online for free based on your activity level and goals.",
+  "applicationCategory": "Health Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
 <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

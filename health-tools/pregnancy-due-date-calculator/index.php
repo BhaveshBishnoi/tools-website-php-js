@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Pregnancy Due Date Calculator - Free Online Due Date Estimator</title>
+<meta name="description" content="Calculate your pregnancy due date online for free based on the last menstrual period. No registration required!">
+<meta name="keywords" content="pregnancy due date calculator, online pregnancy tool, free due date estimation, pregnancy calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Pregnancy Due Date Calculator",
+  "description": "Calculate your pregnancy due date online for free based on the last menstrual period.",
+  "applicationCategory": "Health Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

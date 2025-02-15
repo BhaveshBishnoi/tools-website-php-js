@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Heart Rate Calculator - Free Online Target Heart Rate Zones Calculator</title>
+<meta name="description" content="Calculate your target heart rate zones online for free for optimal exercise intensity. No registration required!">
+<meta name="keywords" content="heart rate calculator, online heart rate tool, free heart rate calculation, target heart rate zones">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Heart Rate Calculator",
+  "description": "Calculate your target heart rate zones online for free for optimal exercise intensity.",
+  "applicationCategory": "Health Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

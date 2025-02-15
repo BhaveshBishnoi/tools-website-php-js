@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Ideal Weight Calculator - Free Online Ideal Weight Range Calculator</title>
+<meta name="description" content="Find your ideal weight range online for free based on height, age, and body frame. No registration required!">
+<meta name="keywords" content="ideal weight calculator, online ideal weight tool, free ideal weight calculation, ideal weight range">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Ideal Weight Calculator",
+  "description": "Find your ideal weight range online for free based on height, age, and body frame.",
+  "applicationCategory": "Health Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
 <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

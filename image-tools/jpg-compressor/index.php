@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>JPG Compressor - Free Online JPG Compression Tool</title>
+<meta name="description" content="Compress JPG images online for free while maintaining good visual quality. No registration required!">
+<meta name="keywords" content="jpg compressor, online jpg tool, free jpg compression, compress jpg images">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "JPG Compressor",
+  "description": "Compress JPG images online for free while maintaining good visual quality.",
+  "applicationCategory": "Image Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

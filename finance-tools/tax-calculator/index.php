@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Tax Calculator - Estimate Tax Liability</title>
+<meta name="description" content="Estimate your tax liability and returns with our Tax Calculator. Free and easy-to-use.">
+<meta name="keywords" content="tax calculator, tax liability, returns, financial tool, online calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Tax Calculator",
+  "description": "Estimate your tax liability and returns.",
+  "applicationCategory": "Financial Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

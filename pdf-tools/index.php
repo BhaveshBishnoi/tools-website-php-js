@@ -4,6 +4,25 @@ $pageDescription = "Free online PDF tools to convert, merge, split, compress and
 include '../includes/header.php'; 
 ?>
 
+<title>Free Online PDF Tools - Convert, Merge, Split & More</title>
+<meta name="description" content="Free online PDF tools to convert, merge, split, compress and manipulate PDF files. No registration required.">
+<meta name="keywords" content="pdf tools, online pdf tools, free pdf tools, convert pdf, merge pdf, split pdf">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PDF Tools",
+  "description": "Free online PDF tools to convert, merge, split, compress and manipulate PDF files.",
+  "applicationCategory": "PDF Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container-fluid py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

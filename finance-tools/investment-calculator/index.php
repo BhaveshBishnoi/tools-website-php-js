@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Investment Calculator - Calculate Returns</title>
+<meta name="description" content="Use our Investment Calculator to calculate returns on your investments over time. Free and easy-to-use.">
+<meta name="keywords" content="investment calculator, returns calculator, financial tool, online calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Investment Calculator",
+  "description": "Calculate returns on your investments over time.",
+  "applicationCategory": "Financial Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

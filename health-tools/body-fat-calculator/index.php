@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Body Fat Calculator - Free Online Body Fat Percentage Calculator</title>
+<meta name="description" content="Estimate your body fat percentage online for free using various measurement methods. No registration required!">
+<meta name="keywords" content="body fat calculator, online body fat tool, free body fat calculation, body fat percentage">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Body Fat Calculator",
+  "description": "Estimate your body fat percentage online for free using various measurement methods.",
+  "applicationCategory": "Health Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

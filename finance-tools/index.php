@@ -1,6 +1,9 @@
 <?php 
 $pageTitle = "Free Finance Tools - Investment, ROI & Budget Calculators";
 $pageDescription = "Free online financial calculators for investments, ROI, loans, mortgages, retirement planning and budgeting. No registration required.";
+?>
+
+<?php 
 include '../includes/header.php'; 
 ?>
 

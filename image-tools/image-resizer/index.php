@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Image Resizer - Free Online Image Resizing Tool</title>
+<meta name="description" content="Resize images online for free. Adjust dimensions or scale by percentage while maintaining aspect ratio. No registration required!">
+<meta name="keywords" content="image resizer, online image tool, free image resizing, resize images">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Image Resizer",
+  "description": "Resize images online for free. Adjust dimensions or scale by percentage while maintaining aspect ratio.",
+  "applicationCategory": "Image Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

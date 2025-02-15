@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Favicon Generator - Free Online Favicon Creator</title>
+<meta name="description" content="Create favicons for your website in multiple sizes for free. No registration required!">
+<meta name="keywords" content="favicon generator, online favicon tool, free favicon creator, favicon sizes">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Favicon Generator",
+  "description": "Create favicons for your website in multiple sizes for free.",
+  "applicationCategory": "Favicon Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

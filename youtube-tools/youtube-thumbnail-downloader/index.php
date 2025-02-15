@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>Thumbnail Downloader - Download YouTube Thumbnails</title>
+<meta name="description" content="Download high-quality thumbnails from any YouTube video with our Thumbnail Downloader. Free and easy-to-use.">
+<meta name="keywords" content="thumbnail downloader, YouTube thumbnail, video thumbnail, download thumbnails">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Thumbnail Downloader",
+  "description": "Download high-quality thumbnails from any YouTube video.",
+  "applicationCategory": "YouTube Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

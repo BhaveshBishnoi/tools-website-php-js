@@ -58,9 +58,9 @@
                         <h3 class="h5 card-title">PDF Tools</h3>
                         <p class="card-text text-muted mb-4">Convert, merge, and edit PDF files with our comprehensive PDF manipulation tools</p>
                         <div class="list-group list-group-flush mb-4">
-                            <a href="pdf-tools/pdf-to-images/" class="list-group-item list-group-item-action"><i class="fas fa-image me-2 text-danger"></i>PDF to Images</a>
-                            <a href="pdf-tools/images-to-pdf/" class="list-group-item list-group-item-action"><i class="fas fa-file-pdf me-2 text-danger"></i>Images to PDF</a>
-                            <a href="pdf-tools/pdf-watermark/" class="list-group-item list-group-item-action"><i class="fas fa-stamp me-2 text-danger"></i>PDF Watermark</a>
+                            <a href="pdf-tools/pdf-to-images-convertor/" class="list-group-item list-group-item-action"><i class="fas fa-image me-2 text-danger"></i>PDF to Images</a>
+                            <a href="pdf-tools/image-to-pdf-convertor/" class="list-group-item list-group-item-action"><i class="fas fa-file-pdf me-2 text-danger"></i>Images to PDF</a>
+                            <a href="pdf-tools/pdf-compressor/" class="list-group-item list-group-item-action"><i class="fas fa-compress me-2 text-danger"></i>PDF Compressor</a>
                         </div>
                         <a href="pdf-tools/" class="btn btn-danger">View All PDF Tools</a>
                     </div>
@@ -78,7 +78,7 @@
                         <p class="card-text text-muted mb-4">Calculate investments, plan budgets, and analyze financial metrics with our finance tools</p>
                         <div class="list-group list-group-flush mb-4">
                             <a href="finance-tools/investment-calculator" class="list-group-item list-group-item-action"><i class="fas fa-chart-line me-2 text-danger"></i>Investment Calculator</a>
-                            <a href="finance-tools/budget-planner" class="list-group-item list-group-item-action"><i class="fas fa-wallet me-2 text-danger"></i>Budget Planner</a>
+                            <a href="finance-tools/budget-calculator" class="list-group-item list-group-item-action"><i class="fas fa-wallet me-2 text-danger"></i>Budget Planner</a>
                             <a href="finance-tools/roi-calculator" class="list-group-item list-group-item-action"><i class="fas fa-percentage me-2 text-danger"></i>ROI Calculator</a>
                         </div>
                         <a href="finance-tools/" class="btn btn-danger">View All Finance Tools</a>
@@ -96,9 +96,9 @@
                         <h3 class="h5 card-title">YouTube Tools</h3>
                         <p class="card-text text-muted mb-4">Analyze, download, and optimize YouTube videos with our tools</p>
                         <div class="list-group list-group-flush mb-4">
-                            <a href="youtube-tools/video-info" class="list-group-item list-group-item-action"><i class="fas fa-info me-2 text-danger"></i>Video Info Extractor</a>
-                            <a href="youtube-tools/thumbnail-downloader" class="list-group-item list-group-item-action"><i class="fas fa-image me-2 text-danger"></i>Thumbnail Downloader</a>
-                            <a href="youtube-tools/tags-generator" class="list-group-item list-group-item-action"><i class="fas fa-tags me-2 text-danger"></i>Tag Generator</a>
+                            <a href="youtube-tools/random-comment-picker" class="list-group-item list-group-item-action"><i class="fas fa-info me-2 text-danger"></i>Comment Picker</a>
+                            <a href="youtube-tools/youtube-thumbnail-downloader" class="list-group-item list-group-item-action"><i class="fas fa-image me-2 text-danger"></i>Thumbnail Downloader</a>
+                            <a href="youtube-tools/youtube-tag-generator" class="list-group-item list-group-item-action"><i class="fas fa-tags me-2 text-danger"></i>Tag Generator</a>
                         </div>
                         <a href="youtube-tools/" class="btn btn-danger">View All YouTube Tools</a>
                     </div>
@@ -135,7 +135,7 @@
                         <p class="card-text text-muted mb-4">Code formatters, encoders, and other developer utilities</p>
                         <div class="list-group list-group-flush mb-4">
                             <a href="developer-tools/code-formatter" class="list-group-item list-group-item-action"><i class="fas fa-code me-2 text-danger"></i>Code Formatter</a>
-                            <a href="developer-tools/json-encoder" class="list-group-item list-group-item-action"><i class="fas fa-file-code me-2 text-danger"></i>JSON Encoder</a>
+                            <a href="developer-tools/json-formatter" class="list-group-item list-group-item-action"><i class="fas fa-file-code me-2 text-danger"></i>JSON Formatter</a>
                             <a href="developer-tools/url-encoder" class="list-group-item list-group-item-action"><i class="fas fa-link me-2 text-danger"></i>URL Encoder</a>
                         </div>
                         <a href="developer-tools/" class="btn btn-danger">View All Developer Tools</a>
@@ -172,9 +172,9 @@
                         <h3 class="h5 card-title">Other Tools</h3>
                         <p class="card-text text-muted mb-4">Miscellaneous online tools to simplify your daily tasks</p>
                         <div class="list-group list-group-flush mb-4">
-                            <a href="other-tools/png-compressor" class="list-group-item list-group-item-action"><i class="fas fa-file-image me-2 text-danger"></i>PNG Compressor</a>
-                            <a href="other-tools/email-template-generator" class="list-group-item list-group-item-action"><i class="fas fa-envelope me-2 text-danger"></i>Email Template Generator</a>
-                            <a href="other-tools/text-case-converter" class="list-group-item list-group-item-action"><i class="fas fa-text-height me-2 text-danger"></i>Text Case Converter</a>
+                            <a href="other-tools/7th-pay-calculator" class="list-group-item list-group-item-action"><i class="fas fa-paypal me-2 text-danger"></i>7th Pay Calculator</a>
+                            <a href="other-tools/file-converter" class="list-group-item list-group-item-action"><i class="fas fa-file-export me-2 text-danger"></i>File Converter</a>
+                            <a href="other-tools/text-tools" class="list-group-item list-group-item-action"><i class="fas fa-text-height me-2 text-danger"></i>Text Tools</a>
                         </div>
                         <a href="other-tools/" class="btn btn-danger">View All Other Tools</a>
                     </div>
@@ -238,5 +238,34 @@
     margin-bottom: 1rem; 
 }
 </style>
+
+<title>Convert PNG to JPG Online - Free Image Converter Tool</title>
+<meta name="description" content="Convert PNG to JPG online for free with our fast and easy-to-use image converter tool. No registration required!">
+<meta name="keywords" content="png to jpg, image converter, free image tool, online image converter">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PNG to JPG Converter",
+  "description": "Convert PNG images to JPG format online for free.",
+  "applicationCategory": "Image Converter",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Image Conversion Tools",
+  "description": "Free online image conversion tools to convert images from one format to another.",
+  "keywords": "image conversion, image converter, online image tools"
+}
+</script>
 
 <?php include 'includes/footer.php'; ?>

@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>BMI Calculator - Free Online Body Mass Index Calculator</title>
+<meta name="description" content="Calculate your Body Mass Index (BMI) online for free and understand what it means for your health. No registration required!">
+<meta name="keywords" content="bmi calculator, online bmi tool, free bmi calculation, body mass index">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "BMI Calculator",
+  "description": "Calculate your Body Mass Index (BMI) online for free and understand what it means for your health.",
+  "applicationCategory": "Health Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
 <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

@@ -1,5 +1,24 @@
 <?php include '../../includes/header.php'; ?>
 
+<title>PDF Compressor - Free Online PDF Compression Tool</title>
+<meta name="description" content="Reduce PDF file size online for free while maintaining reasonable quality. No registration required!">
+<meta name="keywords" content="pdf compressor, online pdf tool, free pdf compression, compress pdf files">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PDF Compressor",
+  "description": "Reduce PDF file size online for free while maintaining reasonable quality.",
+  "applicationCategory": "PDF Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

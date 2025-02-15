@@ -38,6 +38,24 @@ include '../includes/header.php';
                     </div>
                 </div>
             </a>
+            <title>Thumbnail Downloader - Download YouTube Thumbnails</title>
+            <meta name="description" content="Download high-quality thumbnails from any YouTube video with our Thumbnail Downloader. Free and easy-to-use.">
+            <meta name="keywords" content="thumbnail downloader, YouTube thumbnail, video thumbnail, download thumbnails">
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Thumbnail Downloader",
+              "description": "Download high-quality thumbnails from any YouTube video.",
+              "applicationCategory": "YouTube Tool",
+              "operatingSystem": "Web",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            }
+            </script>
         </div>
 
         <div class="col-lg-4 col-md-6">
@@ -52,6 +70,24 @@ include '../includes/header.php';
                     </div>
                 </div>
             </a>
+            <title>YouTube Tags Generator - Generate Optimized Tags</title>
+            <meta name="description" content="Generate optimized tags for better video visibility with our YouTube Tags Generator. Free and easy-to-use.">
+            <meta name="keywords" content="YouTube tags generator, video tags, optimize tags, YouTube SEO">
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "YouTube Tags Generator",
+              "description": "Generate optimized tags for better video visibility.",
+              "applicationCategory": "YouTube Tool",
+              "operatingSystem": "Web",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            }
+            </script>
         </div>
 
         <div class="col-lg-4 col-md-6">
@@ -66,6 +102,24 @@ include '../includes/header.php';
                     </div>
                 </div>
             </a>
+            <title>Random Comment Picker - Pick Random Comments</title>
+            <meta name="description" content="Pick random comments for giveaways and contests with our Random Comment Picker. Free and easy-to-use.">
+            <meta name="keywords" content="random comment picker, YouTube comments, comment picker, giveaway tool">
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Random Comment Picker",
+              "description": "Pick random comments for giveaways and contests.",
+              "applicationCategory": "YouTube Tool",
+              "operatingSystem": "Web",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            }
+            </script>
         </div>
 
         <div class="col-lg-4 col-md-6">
@@ -80,6 +134,24 @@ include '../includes/header.php';
                     </div>
                 </div>
             </a>
+            <title>Timestamp Generator - Create Video Chapters</title>
+            <meta name="description" content="Create video chapters and timestamps easily with our Timestamp Generator. Free and easy-to-use.">
+            <meta name="keywords" content="timestamp generator, YouTube timestamps, video chapters, video timestamps">
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Timestamp Generator",
+              "description": "Create video chapters and timestamps easily.",
+              "applicationCategory": "YouTube Tool",
+              "operatingSystem": "Web",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            }
+            </script>
         </div>
 
     </div>

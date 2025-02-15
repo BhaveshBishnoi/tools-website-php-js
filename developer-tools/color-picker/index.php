@@ -1,8 +1,27 @@
 <?php 
-$pageTitle = "Color Picker - Pick and Convert Colors";
-$pageDescription = "Free online color picker tool. Pick colors and convert between different color formats (HEX, RGB, HSL).";
+$pageTitle = "Color Picker Tool - Free Online Color Picker";
+$pageDescription = "Use our free online color picker tool to find and select colors easily. No registration required!";
 include '../../includes/header.php';
 ?>
+
+<title>Color Picker Tool - Free Online Color Picker</title>
+<meta name="description" content="Use our free online color picker tool to find and select colors easily. No registration required!">
+<meta name="keywords" content="color picker, online color tool, free color picker, select colors">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Color Picker Tool",
+  "description": "Use our free online color picker tool to find and select colors easily.",
+  "applicationCategory": "Color Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container-fluid py-5">
     <nav aria-label="breadcrumb">
