@@ -1,10 +1,28 @@
 <?php include '../../includes/header.php'; ?>
+<title>7th Pay Commission Calculator - Calculate Salary Components Online</title>
+<meta name="description" content="Calculate salary components as per 7th CPC for Central Government Employees with our online calculator tool.">
+<meta name="keywords" content="7th pay commission, salary calculator, 7th cpc calculator, central government employees">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "7th Pay Commission Calculator",
+  "description": "Calculate salary components as per 7th CPC for Central Government Employees online.",
+  "applicationCategory": "Salary Calculator",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/tools/">Home</a></li>
-            <li class="breadcrumb-item"><a href="/tools/other-tools/">Other Tools</a></li>
+            <li class="breadcrumb-item"><a href="/tools/finance-tools/">Finance Tools</a></li>
             <li class="breadcrumb-item active">7th Pay Commission Calculator</li>
         </ol>
     </nav>

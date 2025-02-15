@@ -1,4 +1,4 @@
-<?php 
+<?php
 $pageTitle = "Data Converter - Free Developer Tool";
 $pageDescription = "Convert between data formats online for free.";
 $pageKeywords = "data converter, format converter, developer tool, online data tool, data conversion";
@@ -6,25 +6,31 @@ $pageKeywords = "data converter, format converter, developer tool, online data t
 
 <?php include '../../includes/header.php'; ?>
 
-<title>Data Converter - Free Developer Tool</title>
-<meta name="description" content="Convert between data formats online for free.">
-<meta name="keywords" content="data converter, format converter, developer tool, online data tool, data conversion">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Data Converter",
-  "description": "Convert between data formats online for free.",
-  "applicationCategory": "Developer Tool",
-  "operatingSystem": "Web",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
-}
-</script>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Converter - Free Developer Tool</title>
+    <meta name="description" content="Convert between data formats online for free.">
+    <meta name="keywords" content="data converter, format converter, developer tool, online data tool, data conversion">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Data Converter",
+      "description": "Convert between data formats online for free.",
+      "applicationCategory": "Developer Tool",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body>
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -227,6 +233,7 @@ $pageKeywords = "data converter, format converter, developer tool, online data t
     </div>
 </div>
 
+<!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/4.2.2/fxparser.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
@@ -248,9 +255,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Convert data
     convertBtn.addEventListener('click', function() {
         try {
-            const input = inputData.value;
-            if (!input.trim()) {
-                throw new Error('Please enter some data to convert');
+            const input = inputData.value.trim();
+            if (!input) {
+                throw new Error('Please enter some data to convert.');
             }
 
             // Parse input
@@ -270,8 +277,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Format input
     formatInput.addEventListener('click', function() {
         try {
-            const input = inputData.value;
-            if (!input.trim()) return;
+            const input = inputData.value.trim();
+            if (!input) {
+                throw new Error('Input data is empty.');
+            }
 
             let data = parseData(input, inputFormat.value);
             inputData.value = convertData(data, inputFormat.value);
@@ -284,8 +293,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Format output
     formatOutput.addEventListener('click', function() {
         try {
-            const output = outputData.value;
-            if (!output.trim()) return;
+            const output = outputData.value.trim();
+            if (!output) {
+                throw new Error('Output data is empty.');
+            }
 
             let data = parseData(output, outputFormat.value);
             outputData.value = convertData(data, outputFormat.value);
@@ -308,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
     copyOutput.addEventListener('click', function() {
         outputData.select();
         document.execCommand('copy');
-        
+
         const originalText = copyOutput.innerHTML;
         copyOutput.innerHTML = '<i class="fas fa-check me-2"></i>Copied!';
         setTimeout(() => {
@@ -318,48 +329,56 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Parse data from string
     function parseData(input, format) {
-        switch (format) {
-            case 'json':
-                return JSON.parse(input);
-            case 'xml':
-                const parser = new fxparser.XMLParser({
-                    ignoreAttributes: false,
-                    attributeNamePrefix: "@_",
-                    textNodeName: "#text"
-                });
-                return parser.parse(input);
-            case 'yaml':
-                return jsyaml.load(input);
-            case 'csv':
-                return Papa.parse(input, {header: true}).data;
-            case 'toml':
-                return TOML.parse(input);
-            default:
-                throw new Error('Unsupported input format');
+        try {
+            switch (format) {
+                case 'json':
+                    return JSON.parse(input);
+                case 'xml':
+                    const parser = new fxparser.XMLParser({
+                        ignoreAttributes: false,
+                        attributeNamePrefix: "@_",
+                        textNodeName: "#text"
+                    });
+                    return parser.parse(input);
+                case 'yaml':
+                    return jsyaml.load(input);
+                case 'csv':
+                    return Papa.parse(input, { header: true }).data;
+                case 'toml':
+                    return TOML.parse(input);
+                default:
+                    throw new Error('Unsupported input format.');
+            }
+        } catch (error) {
+            throw new Error(`Failed to parse ${format.toUpperCase()}: ${error.message}`);
         }
     }
 
     // Convert data to string
     function convertData(data, format) {
-        switch (format) {
-            case 'json':
-                return JSON.stringify(data, null, 2);
-            case 'xml':
-                const builder = new fxparser.XMLBuilder({
-                    format: true,
-                    ignoreAttributes: false,
-                    attributeNamePrefix: "@_",
-                    textNodeName: "#text"
-                });
-                return builder.build(data);
-            case 'yaml':
-                return jsyaml.dump(data);
-            case 'csv':
-                return Papa.unparse(data);
-            case 'toml':
-                return TOML.stringify(data);
-            default:
-                throw new Error('Unsupported output format');
+        try {
+            switch (format) {
+                case 'json':
+                    return JSON.stringify(data, null, 2);
+                case 'xml':
+                    const builder = new fxparser.XMLBuilder({
+                        format: true,
+                        ignoreAttributes: false,
+                        attributeNamePrefix: "@_",
+                        textNodeName: "#text"
+                    });
+                    return builder.build(data);
+                case 'yaml':
+                    return jsyaml.dump(data);
+                case 'csv':
+                    return Papa.unparse(data);
+                case 'toml':
+                    return TOML.stringify(data);
+                default:
+                    throw new Error('Unsupported output format.');
+            }
+        } catch (error) {
+            throw new Error(`Failed to convert to ${format.toUpperCase()}: ${error.message}`);
         }
     }
 
@@ -417,6 +436,8 @@ John Doe,30,john@example.com,123 Main St,New York,USA
 Jane Smith,25,jane@example.com,456 Oak Ave,Los Angeles,USA
 Bob Johnson,35,bob@example.com,789 Pine Rd,Chicago,USA`;
                 break;
+            default:
+                throw new Error('Unsupported sample format.');
         }
 
         inputData.value = sample;

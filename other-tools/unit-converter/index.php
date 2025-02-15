@@ -1,4 +1,22 @@
 <?php include '../../includes/header.php'; ?>
+<title>Unit Converter Tool - Convert Units Online for Free</title>
+<meta name="description" content="Convert units online for free with our fast and easy-to-use unit converter tool. No registration required!">
+<meta name="keywords" content="unit converter, online unit converter, free unit tool, unit conversion">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Unit Converter",
+  "description": "Convert units online for free.",
+  "applicationCategory": "Unit Converter",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">

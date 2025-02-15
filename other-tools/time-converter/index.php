@@ -1,4 +1,22 @@
 <?php include '../../includes/header.php'; ?>
+<title>Time Converter Tool - Convert Time Zones Online</title>
+<meta name="description" content="Convert time zones online for free with our fast and easy-to-use time converter tool. No registration required!">
+<meta name="keywords" content="time converter, time zones, online time converter, free time tool">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Time Converter",
+  "description": "Convert time zones online for free.",
+  "applicationCategory": "Time Converter",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">

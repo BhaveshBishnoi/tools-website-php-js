@@ -1,10 +1,28 @@
 <?php include '../../includes/header.php'; ?>
+<title>Text Tools - Convert Case, Count Characters, and Format Text</title>
+<meta name="description" content="Use our free text tools to convert case, count characters, and format text online. No registration required!">
+<meta name="keywords" content="text tools, convert case, count characters, format text, online text tool">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Text Tools",
+  "description": "Use our free text tools to convert case, count characters, and format text online.",
+  "applicationCategory": "Text Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/tools/">Home</a></li>
-            <li class="breadcrumb-item"><a href="/tools/other-tools/">Other Tools</a></li>
+            <li class="breadcrumb-item"><a href="/tools/developer-tools/">Developer Tools</a></li>
             <li class="breadcrumb-item active">Text Tools</li>
         </ol>
     </nav>

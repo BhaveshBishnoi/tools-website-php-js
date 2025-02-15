@@ -1,4 +1,9 @@
-<?php include '../../includes/header.php'; ?>
+<?php
+$pageTitle = "HTML Viewer - Free Developer Tool";
+$pageDescription = "Live HTML editor with preview and formatting online for free.";
+$pageKeywords = "HTML viewer, live HTML editor, developer tool, online HTML tool, HTML formatting";
+include '../../includes/header.php';
+?>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">
@@ -17,6 +22,13 @@
                         <i class="fas fa-code fa-3x text-danger mb-3"></i>
                         <h1 class="h3">HTML Viewer</h1>
                         <p class="text-muted">Live HTML editor and preview with syntax highlighting</p>
+                    </div>
+
+                    <!-- Loading Spinner -->
+                    <div id="loadingSpinner" class="text-center mb-3" style="display: none;">
+                        <div class="spinner-border text-danger" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
                     </div>
 
                     <div class="row g-4">
@@ -65,59 +77,94 @@
                     <div id="errorMessage" class="alert alert-danger mt-4" style="display: none;">
                         <i class="fas fa-exclamation-circle me-2"></i>
                         <span></span>
+                        <button type="button" class="btn-close float-end" onclick="hideError()"></button>
                     </div>
-                </div>
-            </div>
-
-            <!-- Sample Templates -->
-            <div class="card mt-4">
-                <div class="card-body">
-                    <h2 class="h5 mb-3">Sample Templates</h2>
-                    <div class="row g-3">
-                        <div class="col-md-4">
-                            <button class="btn btn-outline-danger w-100" onclick="loadTemplate('basic')">
-                                <i class="fas fa-file-code me-2"></i>Basic HTML
-                            </button>
-                        </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-outline-danger w-100" onclick="loadTemplate('bootstrap')">
-                                <i class="fab fa-bootstrap me-2"></i>Bootstrap Template
-                            </button>
-                        </div>
-                        <div class="col-md-4">
-                            <button class="btn btn-outline-danger w-100" onclick="loadTemplate('responsive')">
-                                <i class="fas fa-mobile-alt me-2"></i>Responsive Layout
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Information Section -->
-            <div class="card mt-4">
-                <div class="card-body">
-                    <h2 class="h5 mb-3">About HTML Viewer</h2>
-                    <p>This tool provides a real-time HTML editor and preview environment. Features include:</p>
-                    <ul class="mb-0">
-                        <li>Live preview as you type</li>
-                        <li>Syntax highlighting</li>
-                        <li>Code formatting</li>
-                        <li>Sample templates</li>
-                        <li>Download functionality</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Include CodeMirror -->
+<!-- Additional Content -->
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12">
+            <!-- FAQs Section -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="h5 mb-3">Frequently Asked Questions</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                                    What is an HTML Viewer?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    An HTML Viewer is a tool that allows you to write, edit, and preview HTML code in real-time. It is useful for developers to test and debug their HTML code.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                    Can I download the HTML code?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, you can download the HTML code by clicking the "Download" button in the Live Preview section. This will save your code as an HTML file.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeadingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                    Is this tool free to use?
+                                </button>
+                            </h2>
+                            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, this HTML Viewer is completely free to use. There are no hidden fees or subscriptions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Tools Section -->
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="h5 mb-3">Related Tools</h2>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <a href="/tools/developer-tools/css-editor/" class="btn btn-outline-danger w-100">
+                                <i class="fas fa-paint-brush me-2"></i>CSS Editor
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="/tools/developer-tools/javascript-compiler/" class="btn btn-outline-danger w-100">
+                                <i class="fab fa-js-square me-2"></i>JavaScript Compiler
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="/tools/developer-tools/json-formatter/" class="btn btn-outline-danger w-100">
+                                <i class="fas fa-code me-2"></i>JSON Formatter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script Links -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/monokai.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/xml/xml.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/css/css.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/htmlmixed/htmlmixed.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prettier/2.5.1/standalone.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prettier/2.5.1/parser-html.js"></script>
@@ -127,90 +174,108 @@
     height: 500px;
     border: 1px solid #dee2e6;
     border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.CodeMirror-focused {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
 }
 </style>
 
-<?php
-$pageTitle = "HTML Viewer - Free Developer Tool";
-$pageDescription = "Live HTML editor with preview and formatting online for free.";
-$pageKeywords = "HTML viewer, live HTML editor, developer tool, online HTML tool, HTML formatting";
-?>
-<title>HTML Viewer - Free Developer Tool</title>
-<meta name="description" content="Live HTML editor with preview and formatting online for free.">
-<meta name="keywords" content="HTML viewer, live HTML editor, developer tool, online HTML tool, HTML formatting">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "HTML Viewer",
-  "description": "Live HTML editor with preview and formatting online for free.",
-  "applicationCategory": "Developer Tool",
-  "operatingSystem": "Web",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
-}
-</script>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize CodeMirror
     const editor = CodeMirror.fromTextArea(document.getElementById('htmlEditor'), {
         mode: 'htmlmixed',
         theme: 'monokai',
         lineNumbers: true,
         autoCloseTags: true,
-        autoCloseBrackets: true,
-        matchBrackets: true,
-        indentUnit: 4,
-        lineWrapping: true,
-        viewportMargin: Infinity
+        matchTags: {bothTags: true},
+        foldGutter: true,
+        gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
+        extraKeys: {
+            'Ctrl-S': function(cm) { formatCode(); },
+            'Cmd-S': function(cm) { formatCode(); }
+        }
     });
 
     const previewFrame = document.getElementById('previewFrame');
     const errorMessage = document.getElementById('errorMessage');
-    const formatBtn = document.getElementById('formatBtn');
-    const clearBtn = document.getElementById('clearBtn');
-    const refreshBtn = document.getElementById('refreshBtn');
-    const downloadBtn = document.getElementById('downloadBtn');
+    const loadingSpinner = document.getElementById('loadingSpinner');
 
-    // Update preview on change
-    let updateTimeout;
-    editor.on('change', function() {
-        clearTimeout(updateTimeout);
-        updateTimeout = setTimeout(updatePreview, 500);
+    // Improved preview update with loading indicator
+    let updateDebounce;
+    editor.on('change', () => {
+        clearTimeout(updateDebounce);
+        loadingSpinner.style.display = 'block';
+        updateDebounce = setTimeout(() => {
+            updatePreview();
+            loadingSpinner.style.display = 'none';
+        }, 500);
     });
 
-    // Format code
-    formatBtn.addEventListener('click', function() {
+    // Enhanced format function
+    function formatCode() {
         try {
-            let formatOptions = {
+            loadingSpinner.style.display = 'block';
+            const formatted = prettier.format(editor.getValue(), {
                 parser: 'html',
-                plugins: [window.prettierPlugins['parser-html']]
-            };
-            const formatted = prettier.format(editor.getValue(), formatOptions);
+                plugins: [window.prettierPlugins.html],
+                printWidth: 100,
+                tabWidth: 4,
+                useTabs: false
+            });
             editor.setValue(formatted);
             hideError();
         } catch (error) {
-            showError(error.message);
+            showError(`Formatting error: ${error.message}`);
+        } finally {
+            loadingSpinner.style.display = 'none';
         }
-    });
+    }
 
-    // Clear editor
-    clearBtn.addEventListener('click', function() {
+    // Enhanced preview update
+    function updatePreview() {
+        try {
+            const content = editor.getValue();
+            const iframeDoc = previewFrame.contentDocument || previewFrame.contentWindow.document;
+            
+            iframeDoc.open();
+            iframeDoc.write(content);
+            iframeDoc.close();
+            
+            // Add error handling for iframe content
+            previewFrame.contentWindow.addEventListener('error', (e) => {
+                showError(`Preview error: ${e.message}`);
+            });
+            
+            hideError();
+        } catch (error) {
+            showError(`Preview update failed: ${error.message}`);
+        }
+    }
+
+    // Enhanced error handling
+    function showError(message) {
+        errorMessage.querySelector('span').textContent = message;
+        errorMessage.style.display = 'flex';
+        errorMessage.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function hideError() {
+        errorMessage.style.display = 'none';
+    }
+
+    // Event listeners for buttons
+    document.getElementById('formatBtn').addEventListener('click', formatCode);
+    document.getElementById('clearBtn').addEventListener('click', () => {
         if (confirm('Are you sure you want to clear the editor?')) {
             editor.setValue('');
             hideError();
         }
     });
-
-    // Refresh preview
-    refreshBtn.addEventListener('click', updatePreview);
-
-    // Download HTML
-    downloadBtn.addEventListener('click', function() {
+    document.getElementById('refreshBtn').addEventListener('click', updatePreview);
+    document.getElementById('downloadBtn').addEventListener('click', () => {
         const content = editor.getValue();
         const blob = new Blob([content], { type: 'text/html' });
         const url = URL.createObjectURL(blob);
@@ -223,217 +288,13 @@ document.addEventListener('DOMContentLoaded', function() {
         URL.revokeObjectURL(url);
     });
 
-    // Update preview
-    function updatePreview() {
-        try {
-            const content = editor.getValue();
-            const doc = previewFrame.contentWindow.document;
-            doc.open();
-            doc.write(content);
-            doc.close();
-            hideError();
-        } catch (error) {
-            showError(error.message);
+    // Keyboard shortcut for formatting
+    document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+            e.preventDefault();
+            formatCode();
         }
-    }
-
-    // Error handling
-    function showError(message) {
-        errorMessage.querySelector('span').textContent = message;
-        errorMessage.style.display = 'block';
-    }
-
-    function hideError() {
-        errorMessage.style.display = 'none';
-    }
-
-    // Load template
-    window.loadTemplate = function(type) {
-        let template = '';
-        switch (type) {
-            case 'basic':
-                template = `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML Template</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>This is a basic HTML template with some simple styling.</p>
-    <ul>
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>List item 3</li>
-    </ul>
-</body>
-</html>`;
-                break;
-            case 'bootstrap':
-                template = `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Template</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Brand</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-md-8">
-                <h1>Bootstrap Template</h1>
-                <p class="lead">This is a starter template with Bootstrap 5.</p>
-                <button class="btn btn-primary">Click Me</button>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">Some quick example text for the card.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>`;
-                break;
-            case 'responsive':
-                template = `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        
-        .card {
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .card h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        
-        .card p {
-            color: #666;
-        }
-        
-        @media (max-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <h1>Responsive Layout</h1>
-            <p>This template demonstrates a responsive grid layout using CSS Grid.</p>
-        </header>
-
-        <div class="grid">
-            <div class="card">
-                <h2>Card 1</h2>
-                <p>This is a responsive card that will adjust its width based on screen size.</p>
-            </div>
-            <div class="card">
-                <h2>Card 2</h2>
-                <p>Try resizing your browser window to see how the layout adapts.</p>
-            </div>
-            <div class="card">
-                <h2>Card 3</h2>
-                <p>The cards will stack vertically on smaller screens.</p>
-            </div>
-            <div class="card">
-                <h2>Card 4</h2>
-                <p>CSS Grid makes it easy to create responsive layouts.</p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>`;
-                break;
-        }
-        editor.setValue(template);
-        updatePreview();
-    }
-
-    // Load basic template by default
-    loadTemplate('basic');
+    });
 });
 </script>
 

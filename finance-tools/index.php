@@ -57,6 +57,20 @@ include '../includes/header.php';
         </div>
 
         <div class="col-lg-4 col-md-6">
+            <a href="7th-pay-calculator/" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm hover-shadow-lg">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box mb-4">
+                            <i class="fas fa-calculator fa-2x text-danger"></i>
+                        </div>
+                        <h3 class="h5 mb-3 text-dark">7th Pay Calculator</h3>
+                        <p class="text-muted mb-0">Calculate salary as per 7th CPC.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
             <a href="loan-calculator/" class="text-decoration-none">
                 <div class="card h-100 border-0 shadow-sm hover-shadow-lg">
                     <div class="card-body p-4 text-center">

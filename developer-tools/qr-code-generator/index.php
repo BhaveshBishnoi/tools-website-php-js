@@ -1,10 +1,28 @@
 <?php include '../../includes/header.php'; ?>
+<title>QR Code Generator - Free Online Tool</title>
+<meta name="description" content="Generate QR codes online for free with our fast and easy-to-use QR code generator tool. No registration required!">
+<meta name="keywords" content="qr code generator, free qr code tool, online qr code generator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "QR Code Generator",
+  "description": "Generate QR codes online for free.",
+  "applicationCategory": "QR Code Generator",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/tools/">Home</a></li>
-            <li class="breadcrumb-item"><a href="/tools/other-tools/">Other Tools</a></li>
+            <li class="breadcrumb-item"><a href="/tools/developer-tools/">Developer Tools</a></li>
             <li class="breadcrumb-item active">QR Code Generator</li>
         </ol>
     </nav>

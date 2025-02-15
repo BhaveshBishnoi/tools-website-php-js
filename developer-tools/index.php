@@ -126,7 +126,7 @@ include '../includes/header.php';
         </div>
 
         <div class="col-lg-4 col-md-6">
-            <a href="js-compiler/" class="text-decoration-none">
+            <a href="javascript-compiler/" class="text-decoration-none">
                 <div class="card h-100 border-0 shadow-sm hover-shadow-lg">
                     <div class="card-body p-4 text-center">
                         <div class="icon-box mb-4">
@@ -168,6 +168,34 @@ include '../includes/header.php';
         </div>
 
         <div class="col-lg-4 col-md-6">
+            <a href="qr-code-generator/" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm hover-shadow-lg">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box mb-4">
+                            <i class="fas fa-qrcode fa-2x text-danger"></i>
+                        </div>
+                        <h3 class="h5 mb-3 text-dark">QR Generator</h3>
+                        <p class="text-muted mb-0">Generate QR codes for any data.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <a href="text-tools/" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm hover-shadow-lg">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box mb-4">
+                            <i class="fas fa-font fa-2x text-danger"></i>
+                        </div>
+                        <h3 class="h5 mb-3 text-dark">Text Tools</h3>
+                        <p class="text-muted mb-0">Case converter, counter & formatter.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
             <a href="data-converter/" class="text-decoration-none">
                 <div class="card h-100 border-0 shadow-sm hover-shadow-lg">
                     <div class="card-body p-4 text-center">
@@ -181,6 +209,19 @@ include '../includes/header.php';
             </a>
         </div>
 
+        <div class="col-lg-4 col-md-6">
+            <a href="css-editor/" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm hover-shadow-lg">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box mb-4">
+                            <i class="fas fa-paint-brush fa-2x text-danger"></i>
+                        </div>
+                        <h3 class="h5 mb-3 text-dark">CSS Editor</h3>
+                        <p class="text-muted mb-0">Edit CSS with live preview and syntax highlighting.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
 
         <div class="col-lg-4 col-md-6">
             <a href="regex-tester/" class="text-decoration-none">
@@ -205,6 +246,20 @@ include '../includes/header.php';
                         </div>
                         <h3 class="h5 mb-3 text-dark">Color Picker</h3>
                         <p class="text-muted mb-0">Pick and convert color codes.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <a href="css-to-tailwind-converter/" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm hover-shadow-lg">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box mb-4">
+                            <i class="fas fa-exchange-alt fa-2x text-danger"></i>
+                        </div>
+                        <h3 class="h5 mb-3 text-dark">CSS to Tailwind Converter</h3>
+                        <p class="text-muted mb-0">Convert CSS to Tailwind utility classes easily.</p>
                     </div>
                 </div>
             </a>

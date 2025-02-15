@@ -4,6 +4,25 @@ $pageDescription = "Collection of free online tools for text manipulation, file 
 include '../includes/header.php'; 
 ?>
 
+<title>Other Tools - Free Online Tools</title>
+<meta name="description" content="Free online tools for various everyday tasks.">
+<meta name="keywords" content="free online tools, text tools, file converter, unit converter, time converter, qr code generator, 7th pay calculator">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Other Tools",
+  "description": "Free online tools for various everyday tasks.",
+  "applicationCategory": "Productivity",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <div class="container-fluid py-5">
 <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -25,19 +44,7 @@ include '../includes/header.php';
     <!-- Tools Grid -->
     <div class="row g-4">
         <!-- Row 1 -->
-        <div class="col-lg-4 col-md-6">
-            <a href="text-tools/" class="text-decoration-none">
-                <div class="card h-100 border-0 shadow-sm hover-shadow-lg">
-                    <div class="card-body p-4 text-center">
-                        <div class="icon-box mb-4">
-                            <i class="fas fa-font fa-2x text-danger"></i>
-                        </div>
-                        <h3 class="h5 mb-3 text-dark">Text Tools</h3>
-                        <p class="text-muted mb-0">Case converter, counter & formatter.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
+       
 
         <div class="col-lg-4 col-md-6">
             <a href="file-converter/" class="text-decoration-none">
@@ -84,32 +91,22 @@ include '../includes/header.php';
         </div>
 
         <div class="col-lg-4 col-md-6">
-            <a href="qr-code-generator/" class="text-decoration-none">
+            <a href="percentage-calculator/" class="text-decoration-none">
                 <div class="card h-100 border-0 shadow-sm hover-shadow-lg">
                     <div class="card-body p-4 text-center">
                         <div class="icon-box mb-4">
-                            <i class="fas fa-qrcode fa-2x text-danger"></i>
+                            <i class="fas fa-percent fa-2x text-danger"></i>
                         </div>
-                        <h3 class="h5 mb-3 text-dark">QR Generator</h3>
-                        <p class="text-muted mb-0">Generate QR codes for any data.</p>
+                        <h3 class="h5 mb-3 text-dark">Advanced Percentage Calculator</h3>
+                        <p class="text-muted mb-0">Perform precise percentage calculations with high-quality inputs.</p>
                     </div>
                 </div>
             </a>
         </div>
 
-        <div class="col-lg-4 col-md-6">
-            <a href="7th-pay-calculator/" class="text-decoration-none">
-                <div class="card h-100 border-0 shadow-sm hover-shadow-lg">
-                    <div class="card-body p-4 text-center">
-                        <div class="icon-box mb-4">
-                            <i class="fas fa-calculator fa-2x text-danger"></i>
-                        </div>
-                        <h3 class="h5 mb-3 text-dark">7th Pay Calculator</h3>
-                        <p class="text-muted mb-0">Calculate salary as per 7th CPC.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
+        
+
+        
     </div>
 
     <!-- About Section -->

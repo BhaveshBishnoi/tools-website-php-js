@@ -1,4 +1,22 @@
 <?php include '../../includes/header.php'; ?>
+<title>Convert PNG to JPG Online - Free Image Converter Tool</title>
+<meta name="description" content="Convert PNG to JPG online for free with our fast and easy-to-use image converter tool. No registration required!">
+<meta name="keywords" content="png to jpg, image converter, free image tool, online image converter">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PNG to JPG Converter",
+  "description": "Convert PNG images to JPG format online for free.",
+  "applicationCategory": "Image Converter",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">
