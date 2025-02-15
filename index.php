@@ -143,6 +143,26 @@
                 </div>
             </div>
 
+            <!-- Games Tools -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm hover-shadow-lg transition-all">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box mb-4">
+                            <i class="fas fa-gamepad fa-3x text-danger"></i>
+                        </div>
+                        <h3 class="h5 card-title">Games Tools</h3>
+                        <p class="card-text text-muted mb-4">Enjoy a variety of games to relax and have fun</p>
+                        <div class="list-group list-group-flush mb-4">
+                            <a href="games/typing-test-game" class="list-group-item list-group-item-action"><i class="fas fa-keyboard me-2 text-danger"></i>Typing Test Game</a>
+                            <a href="games/rock-paper-scissors-game" class="list-group-item list-group-item-action"><i class="fas fa-hand-rock me-2 text-danger"></i>Rock-Paper-Scissors</a>
+                            <a href="games/memory-game" class="list-group-item list-group-item-action"><i class="fas fa-memory me-2 text-danger"></i>Memory Game</a>
+                            <!-- Add more games here -->
+                        </div>
+                        <a href="games/" class="btn btn-danger">View All Games</a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Health Tools -->
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 border-0 shadow-sm hover-shadow-lg transition-all">
@@ -172,9 +192,9 @@
                         <h3 class="h5 card-title">Other Tools</h3>
                         <p class="card-text text-muted mb-4">Miscellaneous online tools to simplify your daily tasks</p>
                         <div class="list-group list-group-flush mb-4">
-                            <a href="other-tools/7th-pay-calculator" class="list-group-item list-group-item-action"><i class="fas fa-paypal me-2 text-danger"></i>7th Pay Calculator</a>
+                            <a href="other-tools/percentage-calculator" class="list-group-item list-group-item-action"><i class="fas fa-paypal me-2 text-danger"></i>Percentage Calculator</a>
                             <a href="other-tools/file-converter" class="list-group-item list-group-item-action"><i class="fas fa-file-export me-2 text-danger"></i>File Converter</a>
-                            <a href="other-tools/text-tools" class="list-group-item list-group-item-action"><i class="fas fa-text-height me-2 text-danger"></i>Text Tools</a>
+                            <a href="other-tools/unit-converter" class="list-group-item list-group-item-action"><i class="fas fa-text-height me-2 text-danger"></i>Unit Converter</a>
                         </div>
                         <a href="other-tools/" class="btn btn-danger">View All Other Tools</a>
                     </div>
@@ -238,34 +258,4 @@
     margin-bottom: 1rem; 
 }
 </style>
-
-<title>Convert PNG to JPG Online - Free Image Converter Tool</title>
-<meta name="description" content="Convert PNG to JPG online for free with our fast and easy-to-use image converter tool. No registration required!">
-<meta name="keywords" content="png to jpg, image converter, free image tool, online image converter">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "PNG to JPG Converter",
-  "description": "Convert PNG images to JPG format online for free.",
-  "applicationCategory": "Image Converter",
-  "operatingSystem": "Web",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Image Conversion Tools",
-  "description": "Free online image conversion tools to convert images from one format to another.",
-  "keywords": "image conversion, image converter, online image tools"
-}
-</script>
-
 <?php include 'includes/footer.php'; ?>
