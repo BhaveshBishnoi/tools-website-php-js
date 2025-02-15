@@ -1,8 +1,28 @@
 <?php 
-$pageTitle = "Code Formatter - Format & Beautify Code";
-$pageDescription = "Free online code formatter and beautifier for multiple programming languages. Supports HTML, CSS, JavaScript, PHP, SQL and more.";
+$pageTitle = "Code Formatter - Free Developer Tool";
+$pageDescription = "Format and beautify code in various programming languages online for free.";
+$pageKeywords = "code formatter, code beautifier, developer tool, online code formatter, programming languages";
 include '../../includes/header.php';
 ?>
+
+<title>Code Formatter - Free Developer Tool</title>
+<meta name="description" content="Format and beautify code in various programming languages online for free.">
+<meta name="keywords" content="code formatter, code beautifier, developer tool, online code formatter, programming languages">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Code Formatter",
+  "description": "Format and beautify code in various programming languages online for free.",
+  "applicationCategory": "Developer Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container-fluid py-5">
 <nav aria-label="breadcrumb">

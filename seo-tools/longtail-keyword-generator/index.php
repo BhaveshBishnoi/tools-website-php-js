@@ -1,3 +1,28 @@
+<?php
+include '../../includes/header.php'; 
+$pageTitle = "Longtail Keyword Generator - Free SEO Tool";
+$pageDescription = "Find and analyze longtail keywords to enhance your SEO strategy and content visibility.";
+$pageKeywords = "longtail keyword generator, SEO tool, keyword analysis, content strategy, search engine optimization";
+?>
+<title>Longtail Keyword Generator - Free SEO Tool</title>
+<meta name="description" content="Find and analyze longtail keywords to enhance your SEO strategy and content visibility.">
+<meta name="keywords" content="longtail keyword generator, SEO tool, keyword analysis, content strategy, search engine optimization">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Longtail Keyword Generator",
+  "description": "Find and analyze longtail keywords to enhance your SEO strategy and content visibility.",
+  "applicationCategory": "SEO Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <?php include '../../includes/header.php'; ?>
 
 <div class="container py-5">

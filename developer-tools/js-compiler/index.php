@@ -1,4 +1,29 @@
+<?php
+$pageTitle = "JavaScript Compiler - Free Developer Tool";
+$pageDescription = "Write and run JavaScript code online for free.";
+$pageKeywords = "JavaScript compiler, online JavaScript tool, developer tool, run JavaScript code, code editor";
+?>
+
 <?php include '../../includes/header.php'; ?>
+
+<title>JavaScript Compiler - Free Developer Tool</title>
+<meta name="description" content="Write and run JavaScript code online for free.">
+<meta name="keywords" content="JavaScript compiler, online JavaScript tool, developer tool, run JavaScript code, code editor">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "JavaScript Compiler",
+  "description": "Write and run JavaScript code online for free.",
+  "applicationCategory": "Developer Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">

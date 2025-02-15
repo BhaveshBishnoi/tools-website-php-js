@@ -1,3 +1,30 @@
+<?php
+include '../../includes/header.php'; 
+
+$pageTitle = "Backlink Checker - Free SEO Tool";
+$pageDescription = "Analyze your website's backlink profile to improve SEO and search engine rankings.";
+$pageKeywords = "backlink checker, SEO tool, backlink analysis, search engine optimization, website ranking";
+?>
+
+<title>Backlink Checker - Free SEO Tool</title>
+<meta name="description" content="Analyze your website's backlink profile to improve SEO and search engine rankings.">
+<meta name="keywords" content="backlink checker, SEO tool, backlink analysis, search engine optimization, website ranking">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Backlink Checker",
+  "description": "Analyze your website's backlink profile to improve SEO and search engine rankings.",
+  "applicationCategory": "SEO Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <?php include '../../includes/header.php'; ?>
 
 <div class="container py-5">

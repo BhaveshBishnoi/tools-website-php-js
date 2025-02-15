@@ -1,19 +1,20 @@
 <?php 
-$pageTitle = "Color Picker Tool - Free Online Color Picker";
-$pageDescription = "Use our free online color picker tool to find and select colors easily. No registration required!";
+$pageTitle = "Color Picker - Free Developer Tool";
+$pageDescription = "Pick and convert color codes online for free.";
+$pageKeywords = "color picker, color converter, developer tool, online color tool, color codes";
 include '../../includes/header.php';
 ?>
 
-<title>Color Picker Tool - Free Online Color Picker</title>
-<meta name="description" content="Use our free online color picker tool to find and select colors easily. No registration required!">
-<meta name="keywords" content="color picker, online color tool, free color picker, select colors">
+<title>Color Picker - Free Developer Tool</title>
+<meta name="description" content="Pick and convert color codes online for free.">
+<meta name="keywords" content="color picker, color converter, developer tool, online color tool, color codes">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Color Picker Tool",
-  "description": "Use our free online color picker tool to find and select colors easily.",
-  "applicationCategory": "Color Tool",
+  "name": "Color Picker",
+  "description": "Pick and convert color codes online for free.",
+  "applicationCategory": "Developer Tool",
   "operatingSystem": "Web",
   "offers": {
     "@type": "Offer",

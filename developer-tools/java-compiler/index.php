@@ -1,4 +1,27 @@
-<?php include '../../includes/header.php'; ?>
+<?php 
+$pageTitle = "Java Compiler - Free Developer Tool";
+$pageDescription = "Compile and run Java code online for free.";
+$pageKeywords = "Java compiler, online Java tool, developer tool, run Java code, code editor";
+include '../../includes/header.php'; ?>
+
+<title>Java Compiler - Free Developer Tool</title>
+<meta name="description" content="Compile and run Java code online for free.">
+<meta name="keywords" content="Java compiler, online Java tool, developer tool, run Java code, code editor">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Java Compiler",
+  "description": "Compile and run Java code online for free.",
+  "applicationCategory": "Developer Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">

@@ -130,16 +130,21 @@
 }
 </style>
 
-<title>HTML Viewer Tool - Free Online HTML Viewer</title>
-<meta name="description" content="View and analyze HTML code online for free with our HTML viewer tool. No registration required!">
-<meta name="keywords" content="html viewer, online html tool, free html viewer, analyze html">
+<?php
+$pageTitle = "HTML Viewer - Free Developer Tool";
+$pageDescription = "Live HTML editor with preview and formatting online for free.";
+$pageKeywords = "HTML viewer, live HTML editor, developer tool, online HTML tool, HTML formatting";
+?>
+<title>HTML Viewer - Free Developer Tool</title>
+<meta name="description" content="Live HTML editor with preview and formatting online for free.">
+<meta name="keywords" content="HTML viewer, live HTML editor, developer tool, online HTML tool, HTML formatting">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "HTML Viewer Tool",
-  "description": "View and analyze HTML code online for free with our HTML viewer tool.",
-  "applicationCategory": "HTML Tool",
+  "name": "HTML Viewer",
+  "description": "Live HTML editor with preview and formatting online for free.",
+  "applicationCategory": "Developer Tool",
   "operatingSystem": "Web",
   "offers": {
     "@type": "Offer",
@@ -183,10 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             let formatOptions = {
                 parser: 'html',
-                printWidth: 80,
-                tabWidth: 4,
-                useTabs: false,
-                plugins: window.prettierPlugins || []
+                plugins: [window.prettierPlugins['parser-html']]
             };
             const formatted = prettier.format(editor.getValue(), formatOptions);
             editor.setValue(formatted);

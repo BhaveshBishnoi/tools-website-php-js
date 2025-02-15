@@ -1,4 +1,27 @@
-<?php include '../../includes/header.php'; ?>
+<?php
+include '../../includes/header.php'; 
+$pageTitle = "XML Sitemap Generator - Free SEO Tool";
+$pageDescription = "Generate XML sitemaps to improve search engine indexing and visibility of your website.";
+$pageKeywords = "XML sitemap generator, SEO tool, search engine indexing, website visibility, sitemap creation";
+?>
+<title>XML Sitemap Generator - Free SEO Tool</title>
+<meta name="description" content="Generate XML sitemaps to improve search engine indexing and visibility of your website.">
+<meta name="keywords" content="XML sitemap generator, SEO tool, search engine indexing, website visibility, sitemap creation">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "XML Sitemap Generator",
+  "description": "Generate XML sitemaps to improve search engine indexing and visibility of your website.",
+  "applicationCategory": "SEO Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">
@@ -28,7 +51,7 @@
                                     <option value="http://">http://</option>
                                 </select>
                                 <input type="text" class="form-control" id="websiteUrl" required 
-                                       placeholder="example.com">
+                                       placeholder="example.com" title="Enter your website's root domain without trailing slash">
                             </div>
                             <div class="form-text">Enter your website's root domain without trailing slash</div>
                         </div>
@@ -45,7 +68,7 @@
                             <div class="col-md-6">
                                 <label class="form-label">Exclude Patterns</label>
                                 <input type="text" class="form-control" id="excludePatterns" 
-                                       placeholder="e.g., /admin/*, /private/*">
+                                       placeholder="e.g., /admin/*, /private/*" title="Patterns to exclude from the sitemap">
                             </div>
                         </div>
 
@@ -53,7 +76,7 @@
                             <div class="col-md-6">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="includeImages" checked>
-                                    <label class="form-check-label" for="includeImages">
+                                    <label class="form-check-label" for="includeImages" title="Include images in the sitemap">
                                         Include Image Sitemap
                                     </label>
                                 </div>
@@ -61,10 +84,21 @@
                             <div class="col-md-6">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="includeLastmod" checked>
-                                    <label class="form-check-label" for="includeLastmod">
+                                    <label class="form-check-label" for="includeLastmod" title="Include last modified dates in the sitemap">
                                         Include Last Modified Dates
                                     </label>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <label class="form-label">Output Format</label>
+                                <select class="form-select" id="outputFormat">
+                                    <option value="xml">XML</option>
+                                    <option value="html">HTML</option>
+                                    <option value="rss">RSS</option>
+                                </select>
                             </div>
                         </div>
 
@@ -195,13 +229,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const excludePatterns = document.getElementById('excludePatterns').value;
         const includeImages = document.getElementById('includeImages').checked;
         const includeLastmod = document.getElementById('includeLastmod').checked;
+        const outputFormat = document.getElementById('outputFormat').value;
 
         try {
             // Simulate crawling with progress updates
             await simulateCrawling(protocol + domain, depth, excludePatterns);
             
             // Generate sitemap
-            const sitemap = generateSitemap(urls, includeImages, includeLastmod);
+            const sitemap = generateSitemap(urls, includeImages, includeLastmod, outputFormat);
             
             // Update preview
             document.getElementById('sitemapPreview').textContent = sitemap;
@@ -246,32 +281,56 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function generateSitemap(urls, includeImages, includeLastmod) {
-        let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-        xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"';
-        if (includeImages) {
-            xml += '\n    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"';
-        }
-        xml += '>\n';
+    function generateSitemap(urls, includeImages, includeLastmod, outputFormat) {
+        let sitemap = '';
 
-        urls.forEach(url => {
-            xml += '    <url>\n';
-            xml += `        <loc>${url.loc}</loc>\n`;
-            if (includeLastmod) {
-                xml += `        <lastmod>${url.lastmod}</lastmod>\n`;
-            }
-            xml += `        <changefreq>${url.changefreq}</changefreq>\n`;
-            xml += `        <priority>${url.priority}</priority>\n`;
+        if (outputFormat === 'xml') {
+            sitemap += '<?xml version="1.0" encoding="UTF-8"?>\n';
+            sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"';
             if (includeImages) {
-                xml += '        <image:image>\n';
-                xml += `            <image:loc>${url.loc}/sample-image.jpg</image:loc>\n`;
-                xml += '        </image:image>\n';
+                sitemap += '\n    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"';
             }
-            xml += '    </url>\n';
-        });
+            sitemap += '>\n';
 
-        xml += '</urlset>';
-        return xml;
+            urls.forEach(url => {
+                sitemap += '    <url>\n';
+                sitemap += `        <loc>${url.loc}</loc>\n`;
+                if (includeLastmod) {
+                    sitemap += `        <lastmod>${url.lastmod}</lastmod>\n`;
+                }
+                sitemap += `        <changefreq>${url.changefreq}</changefreq>\n`;
+                sitemap += `        <priority>${url.priority}</priority>\n`;
+                if (includeImages) {
+                    sitemap += '        <image:image>\n';
+                    sitemap += `            <image:loc>${url.loc}/sample-image.jpg</image:loc>\n`;
+                    sitemap += '        </image:image>\n';
+                }
+                sitemap += '    </url>\n';
+            });
+
+            sitemap += '</urlset>';
+        } else if (outputFormat === 'html') {
+            sitemap += '<html><body><h1>Sitemap</h1><ul>';
+            urls.forEach(url => {
+                sitemap += `<li><a href="${url.loc}">${url.loc}</a></li>`;
+            });
+            sitemap += '</ul></body></html>';
+        } else if (outputFormat === 'rss') {
+            sitemap += '<?xml version="1.0" encoding="UTF-8"?>\n';
+            sitemap += '<rss version="2.0">\n';
+            sitemap += '    <channel>\n';
+            sitemap += '        <title>Sitemap</title>\n';
+            urls.forEach(url => {
+                sitemap += '        <item>\n';
+                sitemap += `            <title>${url.loc}</title>\n`;
+                sitemap += `            <link>${url.loc}</link>\n`;
+                sitemap += '        </item>\n';
+            });
+            sitemap += '    </channel>\n';
+            sitemap += '</rss>';
+        }
+
+        return sitemap;
     }
 
     function updateProgress(percent) {

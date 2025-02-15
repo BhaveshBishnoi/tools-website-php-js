@@ -1,8 +1,28 @@
 <?php 
-$pageTitle = "Password Generator - Generate Secure Passwords";
-$pageDescription = "Free online password generator. Create strong, secure, and random passwords with customizable options.";
+$pageTitle = "Password Generator - Free Developer Tool";
+$pageDescription = "Generate secure random passwords online for free.";
+$pageKeywords = "password generator, secure passwords, random passwords, developer tool, online password tool";
 include '../../includes/header.php';
 ?>
+
+<title>Password Generator - Free Developer Tool</title>
+<meta name="description" content="Generate secure random passwords online for free.">
+<meta name="keywords" content="password generator, secure passwords, random passwords, developer tool, online password tool">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Password Generator",
+  "description": "Generate secure random passwords online for free.",
+  "applicationCategory": "Developer Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container-fluid py-5">
 <nav aria-label="breadcrumb">

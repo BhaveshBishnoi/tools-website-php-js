@@ -1,4 +1,27 @@
-<?php include '../../includes/header.php'; ?>
+<?php
+include '../../includes/header.php'; 
+$pageTitle = "Plagiarism Checker - Free SEO Tool";
+$pageDescription = "Check your content for plagiarism and duplicate content to ensure originality and SEO compliance.";
+$pageKeywords = "plagiarism checker, SEO tool, content originality, duplicate content, search engine optimization";
+?>
+<title>Plagiarism Checker - Free SEO Tool</title>
+<meta name="description" content="Check your content for plagiarism and duplicate content to ensure originality and SEO compliance.">
+<meta name="keywords" content="plagiarism checker, SEO tool, content originality, duplicate content, search engine optimization">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Plagiarism Checker",
+  "description": "Check your content for plagiarism and duplicate content to ensure originality and SEO compliance.",
+  "applicationCategory": "SEO Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">

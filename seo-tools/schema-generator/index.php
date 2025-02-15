@@ -1,3 +1,29 @@
+<?php
+include '../../includes/header.php'; 
+$pageTitle = "Schema Generator - Free SEO Tool";
+$pageDescription = "Generate structured data markup to enhance search engine understanding and improve SEO.";
+$pageKeywords = "schema generator, SEO tool, structured data, search engine optimization, rich snippets";
+?>
+
+<title>Schema Generator - Free SEO Tool</title>
+<meta name="description" content="Generate structured data markup to enhance search engine understanding and improve SEO.">
+<meta name="keywords" content="schema generator, SEO tool, structured data, search engine optimization, rich snippets">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Schema Generator",
+  "description": "Generate structured data markup to enhance search engine understanding and improve SEO.",
+  "applicationCategory": "SEO Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <?php include '../../includes/header.php'; ?>
 
 <div class="container py-5">

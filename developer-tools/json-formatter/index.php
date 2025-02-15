@@ -1,8 +1,28 @@
 <?php 
-$pageTitle = "JSON Formatter - Format & Validate JSON";
-$pageDescription = "Free online JSON formatter and validator. Format, validate and beautify your JSON data with our easy to use tool.";
+$pageTitle = "JSON Formatter - Free Developer Tool";
+$pageDescription = "Format, validate, and beautify JSON data online for free.";
+$pageKeywords = "JSON formatter, JSON beautifier, developer tool, online JSON formatter, JSON validation";
 include '../../includes/header.php';
 ?>
+
+<title>JSON Formatter - Free Developer Tool</title>
+<meta name="description" content="Format, validate, and beautify JSON data online for free.">
+<meta name="keywords" content="JSON formatter, JSON beautifier, developer tool, online JSON formatter, JSON validation">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "JSON Formatter",
+  "description": "Format, validate, and beautify JSON data online for free.",
+  "applicationCategory": "Developer Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container-fluid py-5">
 <nav aria-label="breadcrumb">

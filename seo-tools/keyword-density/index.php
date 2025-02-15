@@ -1,3 +1,29 @@
+<?php
+include '../../includes/header.php'; 
+$pageTitle = "Keyword Density Analyzer - Free SEO Tool";
+$pageDescription = "Analyze your content's keyword distribution and density to optimize for search engines.";
+$pageKeywords = "keyword density analyzer, SEO tool, content optimization, search engine optimization, keyword analysis";
+?>
+
+<title>Keyword Density Analyzer - Free SEO Tool</title>
+<meta name="description" content="Analyze your content's keyword distribution and density to optimize for search engines.">
+<meta name="keywords" content="keyword density analyzer, SEO tool, content optimization, search engine optimization, keyword analysis">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Keyword Density Analyzer",
+  "description": "Analyze your content's keyword distribution and density to optimize for search engines.",
+  "applicationCategory": "SEO Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <?php include '../../includes/header.php'; ?>
 
 <div class="container py-5">

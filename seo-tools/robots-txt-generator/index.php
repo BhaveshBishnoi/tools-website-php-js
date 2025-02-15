@@ -1,3 +1,27 @@
+<?php
+include '../../includes/header.php'; 
+$pageTitle = "Robots.txt Generator - Free SEO Tool";
+$pageDescription = "Create and customize robots.txt files to control search engine crawling and indexing of your website.";
+$pageKeywords = "robots.txt generator, SEO tool, search engine crawling, website indexing, robots.txt file";
+?>
+<title>Robots.txt Generator - Free SEO Tool</title>
+<meta name="description" content="Create and customize robots.txt files to control search engine crawling and indexing of your website.">
+<meta name="keywords" content="robots.txt generator, SEO tool, search engine crawling, website indexing, robots.txt file">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Robots.txt Generator",
+  "description": "Create and customize robots.txt files to control search engine crawling and indexing of your website.",
+  "applicationCategory": "SEO Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 <?php include '../../includes/header.php'; ?>
 
 <div class="container py-5">

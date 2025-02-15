@@ -1,8 +1,28 @@
 <?php 
-$pageTitle = "URL Encoder/Decoder - Encode & Decode URLs";
-$pageDescription = "Free online URL encoder and decoder. Convert special characters to URL-safe format and decode encoded URLs.";
+$pageTitle = "URL Encoder - Free Developer Tool";
+$pageDescription = "Encode and decode URL strings online for free.";
+$pageKeywords = "URL encoder, URL decoder, developer tool, online URL tool, string encoding";
 include '../../includes/header.php';
 ?>
+
+<title>URL Encoder - Free Developer Tool</title>
+<meta name="description" content="Encode and decode URL strings online for free.">
+<meta name="keywords" content="URL encoder, URL decoder, developer tool, online URL tool, string encoding">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "URL Encoder",
+  "description": "Encode and decode URL strings online for free.",
+  "applicationCategory": "Developer Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container-fluid py-5">
 <nav aria-label="breadcrumb">

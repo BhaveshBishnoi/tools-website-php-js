@@ -1,8 +1,28 @@
 <?php 
-$pageTitle = "Lorem Ipsum Generator - Generate Placeholder Text";
-$pageDescription = "Free online Lorem Ipsum generator. Generate placeholder text for your designs, layouts, and mockups.";
+$pageTitle = "Lorem Ipsum Generator - Free Developer Tool";
+$pageDescription = "Generate placeholder text for designs online for free.";
+$pageKeywords = "Lorem Ipsum generator, placeholder text, developer tool, online Lorem Ipsum tool, design text";
 include '../../includes/header.php';
 ?>
+
+<title>Lorem Ipsum Generator - Free Developer Tool</title>
+<meta name="description" content="Generate placeholder text for designs online for free.">
+<meta name="keywords" content="Lorem Ipsum generator, placeholder text, developer tool, online Lorem Ipsum tool, design text">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Lorem Ipsum Generator",
+  "description": "Generate placeholder text for designs online for free.",
+  "applicationCategory": "Developer Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container-fluid py-5">
 <nav aria-label="breadcrumb">

@@ -1,4 +1,29 @@
+<?php 
+$pageTitle = "Data Converter - Free Developer Tool";
+$pageDescription = "Convert between data formats online for free.";
+$pageKeywords = "data converter, format converter, developer tool, online data tool, data conversion";
+?>
+
 <?php include '../../includes/header.php'; ?>
+
+<title>Data Converter - Free Developer Tool</title>
+<meta name="description" content="Convert between data formats online for free.">
+<meta name="keywords" content="data converter, format converter, developer tool, online data tool, data conversion">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Data Converter",
+  "description": "Convert between data formats online for free.",
+  "applicationCategory": "Developer Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container py-5">
     <nav aria-label="breadcrumb">
@@ -297,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'json':
                 return JSON.parse(input);
             case 'xml':
-                const parser = new XMLParser({
+                const parser = new fxparser.XMLParser({
                     ignoreAttributes: false,
                     attributeNamePrefix: "@_",
                     textNodeName: "#text"
@@ -320,7 +345,7 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'json':
                 return JSON.stringify(data, null, 2);
             case 'xml':
-                const builder = new XMLBuilder({
+                const builder = new fxparser.XMLBuilder({
                     format: true,
                     ignoreAttributes: false,
                     attributeNamePrefix: "@_",

@@ -1,8 +1,28 @@
 <?php 
-$pageTitle = "Hash Generator - Generate MD5, SHA-1, SHA-256";
-$pageDescription = "Free online hash generator. Generate MD5, SHA-1, and SHA-256 hashes from text input.";
+$pageTitle = "Hash Generator - Free Developer Tool";
+$pageDescription = "Generate MD5, SHA-1, SHA-256 hashes online for free.";
+$pageKeywords = "hash generator, MD5, SHA-1, SHA-256, developer tool, online hash tool";
 include '../../includes/header.php';
 ?>
+
+<title>Hash Generator - Free Developer Tool</title>
+<meta name="description" content="Generate MD5, SHA-1, SHA-256 hashes online for free.">
+<meta name="keywords" content="hash generator, MD5, SHA-1, SHA-256, developer tool, online hash tool">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Hash Generator",
+  "description": "Generate MD5, SHA-1, SHA-256 hashes online for free.",
+  "applicationCategory": "Developer Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container-fluid py-5">
 <nav aria-label="breadcrumb">

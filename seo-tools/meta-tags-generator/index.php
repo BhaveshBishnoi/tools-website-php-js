@@ -1,3 +1,27 @@
+<?php 
+include '../../includes/header.php'; 
+$pageTitle = "Meta Tags Generator - Free SEO Tool";
+$pageDescription = "Generate optimized meta tags for your web pages to improve SEO and search engine rankings.";
+$pageKeywords = "meta tags generator, SEO tool, search engine optimization, meta tags, web page optimization";
+?>
+<title>Meta Tags Generator - Free SEO Tool</title>
+<meta name="description" content="Generate optimized meta tags for your web pages to improve SEO and search engine rankings.">
+<meta name="keywords" content="meta tags generator, SEO tool, search engine optimization, meta tags, web page optimization">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Meta Tags Generator",
+  "description": "Generate optimized meta tags for your web pages to improve SEO and search engine rankings.",
+  "applicationCategory": "SEO Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 <?php include '../../includes/header.php'; ?>
 
 <div class="container py-5">

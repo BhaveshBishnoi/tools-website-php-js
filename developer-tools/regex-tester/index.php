@@ -1,8 +1,28 @@
 <?php 
-$pageTitle = "Regex Tester - Test Regular Expressions";
-$pageDescription = "Free online regular expression tester. Test and validate your regex patterns with real-time matching.";
+$pageTitle = "Regex Tester - Free Developer Tool";
+$pageDescription = "Test and validate regular expressions online for free.";
+$pageKeywords = "regex tester, regular expression validator, developer tool, online regex tool, regex validation";
 include '../../includes/header.php';
 ?>
+
+<title>Regex Tester - Free Developer Tool</title>
+<meta name="description" content="Test and validate regular expressions online for free.">
+<meta name="keywords" content="regex tester, regular expression validator, developer tool, online regex tool, regex validation">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Regex Tester",
+  "description": "Test and validate regular expressions online for free.",
+  "applicationCategory": "Developer Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container-fluid py-5">
 <nav aria-label="breadcrumb">

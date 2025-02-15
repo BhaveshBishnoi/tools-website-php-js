@@ -1,8 +1,28 @@
 <?php 
-$pageTitle = "Base64 Encoder/Decoder - Convert Text to Base64";
-$pageDescription = "Free online Base64 encoder and decoder. Convert text to Base64 and decode Base64 strings back to text.";
+$pageTitle = "Base64 Encoder - Free Developer Tool";
+$pageDescription = "Encode and decode Base64 strings online for free.";
+$pageKeywords = "Base64 encoder, Base64 decoder, developer tool, online Base64 tool, string encoding";
 include '../../includes/header.php';
 ?>
+
+<title>Base64 Encoder - Free Developer Tool</title>
+<meta name="description" content="Encode and decode Base64 strings online for free.">
+<meta name="keywords" content="Base64 encoder, Base64 decoder, developer tool, online Base64 tool, string encoding">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Base64 Encoder",
+  "description": "Encode and decode Base64 strings online for free.",
+  "applicationCategory": "Developer Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
 <div class="container-fluid py-5">
 <nav aria-label="breadcrumb">

@@ -1,3 +1,27 @@
+<?php 
+include '../../includes/header.php'; 
+$pageTitle = "SERP Preview - Free SEO Tool";
+$pageDescription = "Preview how your page appears in Google search results to improve click-through rates and SEO.";
+$pageKeywords = "SERP preview, SEO tool, search engine results, Google preview, click-through rate optimization";
+?>
+<title>SERP Preview - Free SEO Tool</title>
+<meta name="description" content="Preview how your page appears in Google search results to improve click-through rates and SEO.">
+<meta name="keywords" content="SERP preview, SEO tool, search engine results, Google preview, click-through rate optimization">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SERP Preview",
+  "description": "Preview how your page appears in Google search results to improve click-through rates and SEO.",
+  "applicationCategory": "SEO Tool",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 <?php include '../../includes/header.php'; ?>
 
 <div class="container py-5">
