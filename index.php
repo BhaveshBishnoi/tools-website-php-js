@@ -143,14 +143,14 @@
                 </div>
             </div>
 
-            <!-- Games Tools -->
+            <!-- Games -->
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 border-0 shadow-sm hover-shadow-lg transition-all">
                     <div class="card-body p-4 text-center">
                         <div class="icon-box mb-4">
                             <i class="fas fa-gamepad fa-3x text-danger"></i>
                         </div>
-                        <h3 class="h5 card-title">Games Tools</h3>
+                        <h3 class="h5 card-title">Games</h3>
                         <p class="card-text text-muted mb-4">Enjoy a variety of games to relax and have fun</p>
                         <div class="list-group list-group-flush mb-4">
                             <a href="games/typing-test-game" class="list-group-item list-group-item-action"><i class="fas fa-keyboard me-2 text-danger"></i>Typing Test Game</a>
@@ -181,6 +181,26 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Legal Tools -->
+<div class="col-lg-4 col-md-6">
+    <div class="card h-100 border-0 shadow-sm hover-shadow-lg transition-all">
+        <div class="card-body p-4 text-center">
+            <div class="icon-box mb-4">
+                <i class="fas fa-balance-scale fa-3x text-danger"></i>
+            </div>
+            <h3 class="h5 card-title">Legal Tools</h3>
+            <p class="card-text text-muted mb-4">Access essential legal resources and tools to help you navigate legal matters</p>
+            <div class="list-group list-group-flush mb-4">
+                <a href="legal-tools/disclaimer-generator" class="list-group-item list-group-item-action"><i class="fas fa-exclamation-triangle me-2 text-danger"></i>Disclaimer Generator</a>
+                <a href="legal-tools/gdpr-compliance-checker" class="list-group-item list-group-item-action"><i class="fas fa-check-square me-2 text-danger"></i>GDPR Compliance Checker</a>
+                <a href="legal-tools/privacy-policy-generator" class="list-group-item list-group-item-action"><i class="fas fa-user-shield me-2 text-danger"></i>Privacy Policy Generator</a>
+            </div>
+            <a href="legal-tools/" class="btn btn-danger">View All Legal Tools</a>
+        </div>
+    </div>
+</div>
+
 
             <!-- Other Tools -->
             <div class="col-lg-4 col-md-6">
